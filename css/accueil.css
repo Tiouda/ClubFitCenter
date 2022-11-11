@@ -1,0 +1,201 @@
+.fondContainer {
+  background-color: black;
+  width: 100%;
+  height: 650px;
+}
+
+.container {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  padding: 3%;
+}
+
+.panel {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 40vh;
+  border-radius: 20px;
+  flex: 0.5;
+  position: relative;
+  transition: flex 0.5s ease-out;
+  color: #fff;
+  cursor: pointer;
+  margin: 8px;
+}
+
+.panel1 {
+  background-image: url(../img/slide/COURSCOLLECTIFSslide.jpg);
+}
+
+.panel2 {
+  background-image: url(../img/slide/COURSVIDEOslide.jpg);
+}
+
+.panel3 {
+  background-image: url(../img/slide/SLIDEBOXCROSSTRAINING.jpg);
+}
+
+.panel4 {
+  background-image: url(../img/slide/slideMUSCULATION.jpg);
+}
+
+.panel h3 {
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  opacity: 0;
+}
+
+.panel.active {
+  flex: 5;
+  border-radius: 20px;
+}
+
+/* bouton m'inscrire */
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.cta {
+  display: flex;
+  padding: 10px 45px;
+  text-decoration: none;
+  font-size: 40px;
+  color: white;
+  background: #313132;
+  transition: 1s;
+  box-shadow: 6px 6px 0 black;
+  transform: skewX(-15deg);
+}
+
+.cta:focus {
+  outline: none;
+}
+
+.cta:hover {
+  transition: 0.5s;
+  box-shadow: 10px 10px 0 #ffee03;
+  color: #ffee03;
+}
+
+.cta span:nth-child(2) {
+  transition: 0.5s;
+  margin-right: 0px;
+}
+
+.cta:hover span:nth-child(2) {
+  transition: 0.5s;
+  margin-right: 45px;
+}
+
+span {
+  transform: skewX(15deg);
+}
+
+span:nth-child(2) {
+  width: 20px;
+  margin-left: 35px;
+  position: relative;
+  top: 12%;
+}
+
+/* SVG */
+
+path.one {
+  transition: 0.4s;
+  transform: translateX(-60%);
+}
+
+path.two {
+  transition: 0.5s;
+  transform: translateX(-30%);
+}
+
+.cta:hover path.three {
+  animation: color_anim 1s infinite 0.2s;
+}
+
+.cta:hover path.one {
+  transform: translateX(0%);
+  animation: color_anim 1s infinite 0.6s;
+}
+
+.cta:hover path.two {
+  transform: translateX(0%);
+  animation: color_anim 1s infinite 0.4s;
+}
+
+/* Bouton s'inscrire SVG animations */
+
+@keyframes color_anim {
+  0% {
+    fill: white;
+  }
+  50% {
+    fill: #ffee03;
+  }
+  100% {
+    fill: white;
+  }
+}
+
+.coupe img {
+  width: 100%;
+}
+
+.raison {
+  width: 100%;
+  height: 600px;
+  background-color: black;
+}
+
+.ligne {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 150px;
+  height: 150px;
+  border: 4px solid white;
+  border-radius: 20px;
+  margin: 15px;
+  transition: 0.5s;
+}
+
+.box:hover {
+  width: 180px;
+  height: 180px;
+}
+
+.box h2 {
+  color: white;
+  font-size: 2rem;
+}
+
+.box h4 {
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h4 img {
+  width: 100px;
+}

@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:900i");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --bg: black;
+}
+
+main {
+  background-color: black;
+}
+
+.flottant {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+  transform: translatey(0px);
+  animation: float 4s ease-in-out infinite;
+  margin-top: 20px;
+  background-image: url(../img/logo.png);
+}
+
+.flottant img {
+  width: 395px;
+  height: fit-content;
+  margin-top: 25px;
+}
+
+@keyframes float {
+  0% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+  }
+  50% {
+    box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+    transform: translatey(-20px);
+  }
+  100% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+  }
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  width: 100%;
+  height: 200px;
+  background-color: #313132;
+  background-image: url(../img/Accueil/header2.png);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 700px;
+  max-height: 70px;
+  margin-top: 100px;
+  letter-spacing: 1px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  line-height: 50px;
+  z-index: 1;
+  text-align: center;
+}
+nav .animation {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  z-index: 0;
+  border: 4px solid #ffee03;
+  border-radius: 8px;
+  transition: all 0.4s ease 0s;
+}
+nav a:nth-child(1) {
+  width: 110px;
+}
+nav .start-home,
+a:nth-child(1):hover ~ .animation {
+  width: 90px;
+  left: 0;
+}
+nav a:nth-child(2) {
+  width: 115px;
+}
+nav a:nth-child(2):hover ~ .animation {
+  width: 95px;
+  left: 100px;
+}
+nav a:nth-child(3) {
+  width: 110px;
+}
+nav a:nth-child(3):hover ~ .animation {
+  width: 115px;
+  left: 190px;
+}
+nav a:nth-child(4) {
+  width: 195px;
+}
+nav a:nth-child(4):hover ~ .animation {
+  width: 160px;
+  left: 310px;
+}
+nav a:nth-child(5) {
+  width: 115px;
+}
+nav a:nth-child(5):hover ~ .animation {
+  width: 115px;
+  left: 470px;
+}
+nav a:nth-child(6) {
+  width: 120px;
+}
+nav a:nth-child(6):hover ~ .animation {
+  width: 120px;
+  left: 580px;
+}
+
+
+
+@media (max-width: 575px) {
+  .flottant {
+    width: 100px;
+    height: 100px;
+    margin-top: 70px;
+  }
+  .flottant img {
+    width: 250px;
+    margin-top: 15px;
+  }
+  header {
+    height: 280px;
+  }
+  nav {
+    width: 200px;
+    margin-top: 1px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  nav a:hover {
+    color: #ffee03;
+  }
+  nav .animation {
+    border: none;
+  }
+  .fondContainer {
+    height: 450px;
+  }
+
+  /* slide */
+  .panel1{
+    background-image: url(../img/slide/slideMUSCULATION.jpg);
+  }
+  
+  .panel2{
+    background-image: url(../img/slide/COURSVIDEOslide.jpg);
+  }
+  
+  .panel3{
+    background-image: url(../img/slide/SLIDEBOXCROSSTRAINING.jpg);
+  }
+  
+  .panel4{
+    background-image: url(../img/slide/slideMUSCULATION.jpg);
+  }
+
+  /* Bouton S'inscrire */
+  .cta {
+    font-size: 15px;
+  }
+
+  .cta span {
+    width: 35px;
+  }
+
+  .cta svg {
+    width: 20px;
+  }
+
+  /* Raison */
+  .raison h1 {
+    font-size: 2rem;
+  }
+  .raison {
+    height: 550px;
+  }
+  .box {
+    width: 90px;
+    height: 90px;
+  }
+  .box h2 {
+    font-size: 0.7rem;
+  }
+  .box h4 {
+    font-size: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  h4 img {
+    width: 50px;
+  }
+  .case h4 {
+    font-size: 0.7rem;
+  }
+
+  .box:hover {
+    width: 100px;
+    height: 100px;
+  }
+  /* reseau sociaux */
+  ul {
+    gap: 10px;
+  }
+  /*Footer*/
+  footer {
+    height: 300px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .raison {
+    height: 800px;
+  }
+  .case h4 {
+    font-size: 1rem;
+  }
+}
