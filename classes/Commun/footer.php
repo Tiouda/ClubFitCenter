@@ -76,6 +76,9 @@ if ($_SERVER['SERVER_NAME'] == "localhost") {
                 <a href="#">
                     <h4>Vente au sein du Club</h4>
                 </a>
+                <a href="#">
+                    <h4>Crédits</h4>
+                </a>
             </div>
 
             <div class="case">

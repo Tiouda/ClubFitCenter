@@ -31,8 +31,8 @@ if ($_SERVER['SERVER_NAME'] == "localhost") {
       <a href="<?php echo $path ?>/classes/tarifs.php">Tarifs</a>
       <a href="<?php echo $path ?>/#">S'inscrire</a>
       <a href="<?php echo $path ?>/pages/concept.html">Notre concept</a>
-      <a href="<?php echo $path ?>/#">Contact</a>
-      <a href="<?php echo $path ?>/#">Connexion</a>
+      <a href="<?php echo $path ?>/classes/contact.php">Contact</a>
+      <a href="<?php echo $path ?>/classes/connexion.php">Connexion</a>
       <div class="animation start-home"></div>
     </nav>
   </header>

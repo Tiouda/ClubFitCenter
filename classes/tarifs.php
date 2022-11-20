@@ -23,7 +23,7 @@ if ($_SERVER['SERVER_NAME'] == "localhost") {
 include_once './Commun/header.php';
 ?>
     <section>
-        <h2 class="titre">Nos Abonnement</h2>
+        <h2 class="titre">Nos Abonnement avec engagement</h2>
 
         <div class="cards">
             <div class="container">
@@ -164,31 +164,6 @@ include_once './Commun/header.php';
                     </div>
                 </div>
             </div>
-
-            <div class="container">
-                <div class="card">
-                    <div class="slide slide1">
-                        <div class="content">
-                            <div class="icon">
-                                <h2>Frais de dossier</h2>
-                                <h2>&</h2>
-                                <h2>badges d'accès</h2>
-                                <h2>50€</h2>
-                                <img class="plus" src="../img/tarifs/badge.png" alt="" />
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="slide slide2">
-                        <div class="content">
-                            <h3>Informations</h3>
-                            <p>- Cours collectifs et application coaching 5€/mois</p>
-                            <p>- Info cours collectifs :</p>
-                            <p>11 mois/an, sous réserve de changement du planning</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
 
@@ -200,7 +175,6 @@ include_once './Commun/header.php';
                 <div class="box"><img src="../img/tarifs/1mois.png" alt="" /></div>
                 <div class="box"><img src="../img/tarifs/3mois.png" alt="" /></div>
                 <div class="box"><img src="../img/tarifs/6mois.png" alt="" /></div>
-                <div class="box"><img src="../img/tarifs/senior.png" alt="" /></div>
             </div>
         </div>
     </section>
