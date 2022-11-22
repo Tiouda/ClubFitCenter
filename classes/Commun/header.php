@@ -29,7 +29,7 @@ if ($_SERVER['SERVER_NAME'] == "localhost") {
     <nav>
       <a href="<?php echo $path ?>/accueil.php">Accueil</a>
       <a href="<?php echo $path ?>/classes/tarifs.php">Tarifs</a>
-      <a href="<?php echo $path ?>/#">S'inscrire</a>
+      <a href="<?php echo $path ?>/classes/inscrire.php">S'inscrire</a>
       <a href="<?php echo $path ?>/pages/concept.html">Notre concept</a>
       <a href="<?php echo $path ?>/classes/contact.php">Contact</a>
       <a href="<?php echo $path ?>/classes/connexion.php">Connexion</a>

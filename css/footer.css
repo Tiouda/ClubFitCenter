@@ -7,13 +7,13 @@
   align-items: center;
   background-color: black;
 }
-ul {
+.reseau ul {
   position: relative;
   display: flex;
   gap: 50px;
 }
 
-ul li {
+.reseau ul li {
   position: relative;
   list-style: none;
   width: 80px;
@@ -25,12 +25,12 @@ ul li {
   transition: 0.5s;
 }
 
-ul li:hover {
+.reseau ul li:hover {
   z-index: 10000;
   transform: scale(0.75);
 }
 
-ul li::before {
+.reseau ul li::before {
   content: "";
   position: absolute;
   inset: 30px;
@@ -38,11 +38,11 @@ ul li::before {
   transition: 0.5s;
 }
 
-ul li:hover::before {
+.reseau ul li:hover::before {
   inset: 0px;
 }
 
-ul li::after {
+.reseau ul li::after {
   content: "";
   position: absolute;
   inset: 0;
@@ -50,7 +50,7 @@ ul li::after {
   transform: rotate(45deg);
 }
 
-ul li a {
+.reseau ul li a {
   position: relative;
   text-decoration: none;
   color: var(--clr);
@@ -59,7 +59,7 @@ ul li a {
   transition: 0.5s;
 }
 
-ul li:hover a {
+.reseau ul li:hover a {
   font-size: 3em;
   filter: drop-shadow(0 0 20px var(--clr)) drop-shadow(0 0 40px var(--clr))
     drop-shadow(0 0 60px var(--clr));

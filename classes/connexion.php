@@ -6,6 +6,9 @@ if ($_SERVER['SERVER_NAME'] == "localhost") {
 }
 ?>
 
+<?php 
+session_start();
+?>
 <!DOCTYPE html>
 <html>
 
@@ -24,11 +27,11 @@ include_once './Commun/header.php';
 ?>
 <main>
 <div class="container">
-      <form>
+      <form name="connexion" method="post" action="admin_connexion.php">
         <h2>Bienvenue</h2>
-        <input type="email" placeholder="Email" /><br />
-        <input type="password" placeholder="Mot de passe" /><br />
-        <input type="button" value="Connexion" /><br />
+        <input type="email" name="email_admin" placeholder="Email" /><br />
+        <input type="password" name="password_admin" placeholder="Mot de passe" /><br />
+        <input type="submit" value="Connexion" /><br />
         <a href="#">Mot de passe oublié</a>
       </form>
 

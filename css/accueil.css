@@ -178,8 +178,7 @@ path.two {
 }
 
 .box:hover {
-  width: 180px;
-  height: 180px;
+  transform: scale(1.2)
 }
 
 .box h2 {
